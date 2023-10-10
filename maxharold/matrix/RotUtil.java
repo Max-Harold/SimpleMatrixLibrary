@@ -20,10 +20,10 @@ public class RotUtil {
     }
 
     /**
-     * Method that rotates a vector by some angle (returns null if invalid)
+     * Method that rotates a vector by some angle
      * @param v the vector to rotate
      * @param theta the angle to rotate the vector by (in radians)
-     * @return the rotated vector
+     * @return the rotated vector (returns null if invalid)
      */
     public static Vector rotate2DVector(Vector v, double theta) {
         if (v.dim() != 2) return null;
@@ -31,10 +31,10 @@ public class RotUtil {
     }
 
     /**
-     * Method that performs yaw rotation to a 3D vector (returns null if invalid)
+     * Method that performs yaw rotation to a 3D vector
      * @param v the vector to rotate
      * @param yaw the angle to yaw vector by (in radians)
-     * @return the rotated vector
+     * @return the rotated vector (returns null if invalid)
      */
     public static Vector yaw(Vector v, double yaw) {
         if (v.dim() != 3) return null;
@@ -46,10 +46,10 @@ public class RotUtil {
     }
 
     /**
-     * Method that performs pitch rotation to a 3D vector (returns null if invalid)
+     * Method that performs pitch rotation to a 3D vector
      * @param v the vector to rotate
      * @param pitch the angle to pitch vector by (in radians)
-     * @return the rotated vector
+     * @return the rotated vector (returns null if invalid)
      */
     public static Vector pitch(Vector v, double pitch) {
         if (v.dim() != 3) return null;
@@ -62,10 +62,10 @@ public class RotUtil {
     }
 
     /**
-     * Method that performs roll rotation to a 3D vector (returns null if invalid)
+     * Method that performs roll rotation to a 3D vector
      * @param v the vector to rotate
      * @param roll the angle to roll vector by (in radians)
-     * @return the rotated vector
+     * @return the rotated vector (returns null if invalid)
      */
     public static Vector roll(Vector v, double roll) {
         if (v.dim() != 3) return null;

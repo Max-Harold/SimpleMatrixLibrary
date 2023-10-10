@@ -18,7 +18,7 @@ public class Vector {
 
     /**
      * Constructs an empty vector from a specified dimension
-     * @param dim
+     * @param dim the dimension of the vector
      */
     public Vector(int dim) {
         this.dim = dim;
@@ -26,6 +26,7 @@ public class Vector {
     }
 
     /**
+     * Method that returns the dimension of the vector
      * @return the dimension of the vector
      */
 
@@ -34,6 +35,7 @@ public class Vector {
     }
 
     /**
+     * Method that turns the vector into an array
      * @return the vector as an array
      */
 
@@ -50,9 +52,9 @@ public class Vector {
     }
 
     /**
-     * Gets element at certain index (returns null if invalid)
+     * Gets element at certain index
      * @param i the i-th index of the vector
-     * @return the element of the vector
+     * @return the element of the vector (returns null if invalid)
      */
     public Double get(int i) {
         if (i >= dim || i < 0) return null;
@@ -103,10 +105,10 @@ public class Vector {
     }
 
     /**
-     * Performs dot product with two vectors (returns null if invalid)
+     * Performs dot product with two vectors
      * @param v1 first vector
      * @param v2 second vector
-     * @return the dot product of v1 and v2
+     * @return the dot product of v1 and v2 (returns null if invalid)
      */
     public static Double dot(Vector v1, Vector v2) {
         if (v1.dim() != v2.dim()) return null;
@@ -120,9 +122,9 @@ public class Vector {
     }
 
     /**
-     * Performs dot product with current instance of vector and another one (returns null if invalid)
+     * Performs dot product with current instance of vector and another one
      * @param v2 the second vector
-     * @return the dot product
+     * @return the dot product (returns null if invalid)
      */
     public Double dot(Vector v2) {
         if (v2.dim() != dim) return null;
@@ -130,10 +132,10 @@ public class Vector {
     }
 
     /**
-     * Performs cross product of two 3D vectors (returns null if invalid)
-     * @param v1
-     * @param v2
-     * @return the cross product
+     * Performs cross product of two 3D vectors
+     * @param v1 the first vector
+     * @param v2 the second vector
+     * @return the cross product (returns null if invalid)
      */
     public static Vector crossProduct(Vector v1, Vector v2) {
         if (v1.dim() != 3 && v2.dim() != 3) return null;
@@ -142,19 +144,19 @@ public class Vector {
     }
 
     /**
-     * Performs cross product with current vector instance and another instance (returns null if invalid)
+     * Performs cross product with current vector instance and another instance
      * @param v2 the second vector
-     * @return the cross product
+     * @return the cross product (returns null if invalid)
      */
     public Vector crossProduct(Vector v2) {
         return crossProduct(this, v2);
     }
 
     /**
-     * Calculates the angle between two vectors (returns null if invalid)
+     * Calculates the angle between two vectors
      * @param v1 the first vector
      * @param v2 the second vector
-     * @return the angle between the two vectors
+     * @return the angle between the two vectors in radians (returns null if invalid)
      */
     public static Double angleBetween(Vector v1, Vector v2) {
         if (v1.dim() != v2.dim()) return null;
@@ -164,7 +166,7 @@ public class Vector {
     /**
      * Calculates the angle between the current vector instance and another one
      * @param v2 the second vector
-     * @return the angle between the two vectors
+     * @return the angle between the two vectors in radians (returns null if invalid)
      */
     public double angleBetween(Vector v2) {
         return angleBetween(this, v2);
