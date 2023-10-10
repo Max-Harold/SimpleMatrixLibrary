@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"maxharold.matrix","l":"Matrix"},{"p":"maxharold.matrix","l":"RotUtil"},{"p":"maxharold.matrix","l":"Vector"}];updateSearchResults();
